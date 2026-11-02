@@ -186,16 +186,21 @@ export default function Header({ onOpenCallModal }) {
             <div className="hidden sm:flex items-center gap-3">
               <a
                 href="tel:6169004759"
-                className="flex flex-col items-end group"
+                className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl hover:bg-slate-100/90 transition-all group"
+                title="Call (616) 900-4759 immediately"
               >
-                <span className="text-[10px] uppercase font-bold tracking-wider text-fireOrange-600 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-fireOrange-500 animate-ping"></span>
-                  24/7 Live Emergency Line
-                </span>
-                <span className="text-base font-extrabold text-glacierNavy-950 group-hover:text-fireOrange-600 transition-colors whitespace-nowrap flex items-center gap-1.5">
-                  <Phone className="w-4 h-4 text-fireOrange-500" />
-                  (616) 900-4759
-                </span>
+                <div className="w-8 h-8 rounded-full bg-fireOrange-100 group-hover:bg-fireOrange-600 flex items-center justify-center transition-colors shadow-sm">
+                  <Phone className="w-4 h-4 text-fireOrange-600 group-hover:text-white transition-colors" />
+                </div>
+                <div className="flex flex-col items-start text-left">
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-fireOrange-600 flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-fireOrange-500 animate-ping"></span>
+                    Book a Call Now
+                  </span>
+                  <span className="text-sm md:text-base font-extrabold text-glacierNavy-950 group-hover:text-fireOrange-600 transition-colors whitespace-nowrap">
+                    (616) 900-4759
+                  </span>
+                </div>
               </a>
 
               <button
